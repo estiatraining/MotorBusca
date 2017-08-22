@@ -1,0 +1,130 @@
+/*
+    Arquivo Cadastro.css é o arquivo que contem as formataçoes em folha de estilos usados no sistema
+    Autor: Cleison Ferreira de Melo
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body
+{
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 10pt;
+}
+#login
+{
+    display: block;
+    height: 155px;
+    width: 280px;
+    margin: 200px auto;
+    *margin: 200px 350px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 16px;
+    color: #000099;
+    font-family: Courier New, Courier, monospace;
+}
+#login label
+{
+    display: block;
+    float:left;
+    width: 265px;
+    margin: 10px 0 0 8px;
+    text-align: left;
+    font-family: Courier New, Courier, monospace;
+}
+#login label input
+{
+    display: block;
+    float:left;
+    width: 265px;
+    *margin-left: -8px;
+}
+#login label #gravar
+{
+    width: 150px;
+    border: 1px solid #000099;
+    background-color: transparent;
+    color: #000099;
+}
+
+#topoCadastro
+{
+     display: block;
+     float: left;
+     margin: 20px 212.5px;
+     *margin: 20px 112.5px;
+     width: 850px;
+     *width: 650px;
+     height: 80px;
+}
+#corpoCadastro
+{
+     display: block;
+     float: left;
+     margin: 0px 212.5px;
+     *margin: 20px 112.5px;
+     width: 850px;
+     *width: 650px;
+     height: 200px;
+}
+#footerCadastro
+{
+     display: block;
+     float: left;
+     margin: 20px 212.5px;
+     *margin: 20px 112.5px;
+     width: 850px;
+     *width: 650px;      
+     height: 40px;
+}
+#corpoCadastro h4
+{
+    text-align: left;
+    display: block;
+    float: left;
+    width: 90%;
+    font-size: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 10px 10px 5px 10px;
+}
+#corpoCadastro label
+{
+    text-align: left;
+    display: block;
+    float: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 10px 10px 5px 10px;
+    width: 450px;
+}
+#corpoCadastro label span
+{
+    text-align: right;
+    font-size: 13px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #990033;
+    margin-left: 78px;
+}
+#corpoCadastro label input
+{
+    height: 20px;
+    width: 450px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    *margin-left: -10px;
+}
+#corpoCadastro label #gravar
+{
+    border: 1px solid #006600;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    *margin-left: -10px;
+}
+
+
+
+
+

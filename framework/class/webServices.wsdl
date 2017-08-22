@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<definitions name='webServices'
+  targetNamespace='http://example.org/StockQuote'
+  xmlns:tns=' http://example.org/StockQuote '
+  xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+  xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+  xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+  xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+  xmlns='http://schemas.xmlsoap.org/wsdl/' >
+    <message name='enviarEmailRequest'>
+        <part name='destino' type='xsd:string' />
+        <part name='cabecalho' type='xsd:string' />
+        <part name='mensagem' type='xsd:string' />
+        <part name='headers' type='xsd:string' />
+    </message>
+    <message name='enviarEmailResponse'>
+        <part name='resultado' type='xsd:string' />
+    </message>
+    <portType name='webServicesPortType'>
+        <operation name='enviarEmail'>
+            <input message='tns:enviarEmailRequest' />
+            <output message='tns:enviarEmailResponse' />
+        </operation>
+    </portType>
+    <binding name='webServicesBinding' type='tns:webServicesPortType' >
+        <soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http' />
+        <operation name='enviarEmail' >
+            <soap:operation soapAction='webServices#enviarEmail' />
+            <input>
+                <soap:body use='encoded' namespace='webServices' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='webServices' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+            </output>
+        </operation>
+    </binding>
+    <service name='webServicesService'>
+        <port name='webServicesPort' binding='webServicesBinding'>
+            <soap:address location='http://localhost/framework/class/servidor.php' />
+        </port>
+    </service>
+</definitions>

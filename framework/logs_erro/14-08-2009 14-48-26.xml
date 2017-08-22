@@ -1,0 +1,5 @@
+<log>
+<time>14 - 08 - 2009 14:48:26</time>
+<message> INSERT INTO paginas ( link, conteudo, data, hora ) VALUES ( 'http://www.opopular.com.br', 'http://www.goiasnet.com/bar/index.php;http://www.opopular.com.br/anteriores/14ago2009/default.php;', now(), now() ); 
+<b><i>Erro, entrada sql ivalida ou incorreta!</i></b>
+<b><i> Linha: 63<br />Arquivo: /index.php</i></b><br /></message></log>
